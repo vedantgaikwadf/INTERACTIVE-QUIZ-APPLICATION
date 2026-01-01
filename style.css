@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #eaf0ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  background: white;
+  padding: 25px 30px;
+  width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.topic-btn,
+#next-btn,
+#restart-btn {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #4e73df;
+  color: white;
+  font-size: 16px;
+}
+
+.topic-btn:hover,
+#restart-btn:hover {
+  background: #3558c9;
+}
+
+#next-btn:disabled {
+  background: #aebdf5;
+  cursor: not-allowed;
+}
+
+#options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.option-btn {
+  padding: 10px;
+  background: #eef2ff;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.option-btn:hover {
+  background: #dce6ff;
+}
+
+.option-btn.correct {
+  background: #c6f7c6;
+  border-color: green;
+}
+
+.option-btn.wrong {
+  background: #f7c6c6;
+  border-color: red;
+}
+
+#feedback {
+  min-height: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#score-box {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Back button (small) inside quiz section */
+.small-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 15px;
+  background: #ffffff;
+  border: 2px solid #4e73df;
+  color: #4e73df;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s;
+  margin-bottom: 12px;
+}
+
+.small-btn:hover {
+  background: #4e73df;
+  color: white;
+  transform: scale(1.04);
+}
+
+.small-btn:active {
+  transform: scale(0.98);
+}
+
+/* Progress bar */
+#progress-container {
+  width: 100%;
+  height: 10px;
+  background: #dde3ff;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 8px 0 16px 0;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #4e73df, #1cc88a);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}

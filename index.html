@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <h1>Interactive Quiz Application</h1>
+
+    <!-- Topic Selection Section -->
+    <div id="topic-section">
+      <h2>Select Quiz Topic:</h2>
+      <button class="topic-btn" data-topic="js">JavaScript</button>
+      <button class="topic-btn" data-topic="c">C Programming</button>
+      <button class="topic-btn" data-topic="gk">General Knowledge</button>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz-section" style="display: none;">
+      <!-- Back button -->
+      <button id="back-btn" class="small-btn">← Back to Topics</button>
+
+      <!-- Progress bar -->
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+
+      <h2 id="question-text"></h2>
+      <div id="options-container"></div>
+      <p id="feedback"></p>
+
+      <button id="next-btn" disabled>Next Question</button>
+
+      <div id="score-box">
+        <p>Question: <span id="current-q">0</span> / <span id="total-q">0</span></p>
+        <p>Score: <span id="score">0</span></p>
+      </div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result-section" style="display: none;">
+      <h2>Your Score: <span id="final-score"></span></h2>
+      <button id="restart-btn">⬅ Back to Topics</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
