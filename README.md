@@ -22,5 +22,5 @@ Each quiz question is displayed with four multiple-choice options, and users rec
 An animated progress bar visually represents quiz completion, enhancing user engagement and providing clear progress indication throughout the quiz. Navigation controls such as Next Question, Back to Topics, and Restart Quiz buttons allow smooth movement between different stages of the application without page reloads.
 
 At the end of the quiz, a result screen displays the user’s final score in a clear and concise format. The interface is styled using modern CSS techniques, including flexbox layouts, hover effects, transitions, and responsive design principles to ensure a polished and consistent appearance across devices.
-
+OUTPUT:->
 https://github.com/vedantgaikwadf/INTERACTIVE-QUIZ-APPLICATION/issues/1#issue-3774206016
